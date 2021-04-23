@@ -29,6 +29,7 @@ class HomeController extends AbstractController
             ])
             ->add('email', EmailType::class, [
                 'constraints' => [
+                    new NotBlank,
                     new Email,
                 ]
             ])
