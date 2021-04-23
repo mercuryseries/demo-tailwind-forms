@@ -1,0 +1,25 @@
+{
+    "devDependencies": {
+        "@symfony/stimulus-bridge": "^2.0.0",
+        "@symfony/webpack-encore": "^1.0.0",
+        "autoprefixer": "^10.2.5",
+        "core-js": "^3.0.0",
+        "cross-env": "^7.0.3",
+        "postcss-loader": "^5.2.0",
+        "regenerator-runtime": "^0.13.2",
+        "stimulus": "^2.0.0",
+        "tailwindcss": "^2.1.1",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "cross-env NODE_ENV=production encore production --progress"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.3.2"
+    }
+}

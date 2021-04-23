@@ -38,6 +38,7 @@
         "symfony/twig-bundle": "5.x-dev",
         "symfony/validator": "5.*",
         "symfony/web-link": "5.*",
+        "symfony/webpack-encore-bundle": "dev-main",
         "symfony/yaml": "5.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"

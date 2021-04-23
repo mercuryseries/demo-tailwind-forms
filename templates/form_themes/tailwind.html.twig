@@ -1,0 +1,21 @@
+{% use 'tailwind_2_layout.html.twig' %}
+
+{%- block form_label -%}
+    {%- set label_class = label_class|default('block text-gray-500 uppercase tracking-wider text-sm font-bold') -%}
+    {{- parent() -}}
+{%- endblock -%}
+
+{%- block widget_attributes -%}
+    {%- set widget_class = widget_class|default('mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50') -%}
+    {{- parent() -}}
+{%- endblock -%}
+
+{%- block checkbox_widget -%}
+    {%- set widget_class = widget_class|default('mr-2 rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50') -%}
+    {{- parent() -}}
+{%- endblock -%}
+
+{%- block checkbox_label -%}
+    {%- set label_class = label_class|default('block text-gray-800') -%}
+    {{- block('form_label') -}}
+{%- endblock -%}
